@@ -1,0 +1,60 @@
+{% load staticfiles %}
+<!doctype html>
+<head>
+   <title>Slackmo</title>
+   <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+   <link rel="shortcut icon" href="{% static "slackpay/img/favicon.ico" %}" type="image/x-icon"/>
+   <style>
+      .tb {
+      display: table;
+      max-width:80%;
+      margin: 10px auto;
+      }
+      .tbr {
+      display: table-row;
+      }
+      .tbc {
+      display: table-cell;
+      vertical-align: middle;
+      }
+      .tb img {
+      height: 140px;
+      max-width:100%;
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div class="jumbotron">
+         <center>
+          <img src="{% static "slackpay/img/slackmo-logo.png" %}" />
+            <h1>Welcome to Slackmo</h1>
+            <br>
+            <p class="lead">A Venmo integration for Slack that<br/> lets you pay your co-workers with ease.</h3></p>
+         </center>
+         <center><a class="btn btn-lg btn-success" href="https://github.com/mauerbac/slack-venmo-integration" role="button">View Code on Github</a></center>
+         <h2>Application details: </h2>
+         <div style="font-size:16px;line-height:1.5;">
+            <ul>
+               <li>This is a sample app to showcase a Venmo <a href="https://api.slack.com/slash-commands">slash command </a> integration for Slack.</li>
+               <li>The commands: </li>
+                  <ul>
+                     <li> <code> /slackmo [@username] [$amount] [note] </code>. For example, <code> /slackmo @mauerbac $10 lunch! </code> </li>
+                     <li> <code> /slackmo help </code></li>
+                     <li> <code> /slackmo [@username] add [phone #] </code> - Used for adding a new co-worker </li>
+                  </ul>
+
+               <li>Right now, this isn't on the Slack platform, so you can test it out as a <a href="https://my.slack.com/services/new/slash-commands"> custom command </a> on your own team. Check out the code on Github.</li>
+               <!-- <li> Read the blog post </li> -->
+               <li> Built by <a href="https://twitter.com/mauerbac"> Matt Auerbach </a></li>
+            </ul>
+         </div>
+         <br>
+         <center>
+         <img src="{% static "slackpay/img/demo.png" %}" style="width:60%" />
+         </center>
+      </div>
+   </div>
+</body>
+</html>
