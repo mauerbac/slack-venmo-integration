@@ -59,3 +59,5 @@ The app has two endpoints: `/main` & `/venmoauth’. Slack POSTs all slash comma
 * Add support to refresh Venmo Auth tokens when expired
 * Add better authentication to avoid co-worker spoofing
 * Add more command functionality
+
+Reach out to @mauerbac with questions/feedback. Thanks!
