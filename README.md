@@ -4,7 +4,7 @@
 
 [http://slackmo.elasticbeanstalk.com/](http://slackmo.elasticbeanstalk.com/)
 
-This is a sample app leveraging Slack’s [slash command](https://api.slack.com/slash-commands) integration for Venmo. Within Slack you can easily pay your co-workers using a simple command. Currently, it supports the ability to pay using their Slack username. 
+This is a Venmo Slack integration leveraging Slack’s [slash command](https://api.slack.com/slash-commands). Within Slack you can easily pay your co-workers using a simple command. Currently, it supports the ability to pay using their Slack username. 
 
 ###Slash Commands
 
