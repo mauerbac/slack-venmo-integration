@@ -43,7 +43,7 @@ Supports 3 commands:
 
 A first time user will be immediately prompted to Oauth with Venmo. A user must authenticate with Venmo so the app can make payments on their behalf. This token is saved in the app’s database for later use. A Slack username doesn’t necessarily map to a Venmo username, so I needed to create a mapping of Slack username to a Venmo identifying. In this app, I used the Slack username and Venmo phone number. If the receiver hasn’t used the app, you must supply their phone number using the `/slackmo @will add [number]` command. 
 
-The app has two endpoints: `/main` & `/venmoauth’, which can be seen in `api/views.py`. Slack POSTs all slash command data to the main endpoint and Venmo uses the venmoauth endpoint in the OAuth process.   
+The app has two endpoints: `/main` & `/venmoauth`, which can be seen in `api/views.py`. Slack POSTs all slash command data to the main endpoint and Venmo uses the venmoauth endpoint in the OAuth process.   
 
 
 ###Housekeeping
