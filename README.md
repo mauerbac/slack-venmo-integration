@@ -1,6 +1,6 @@
-# Building a Slack Slask Command Integration 
+# Building a Venmo Integration for Slack
 
-[Live Site](http://bit.ly/cleverbirthday)
+[Live Site]()
 
 ### Slash Commands 
 
