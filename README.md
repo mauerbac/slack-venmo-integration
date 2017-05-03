@@ -1,12 +1,12 @@
 # Building a Venmo Integration for Slack
 
-##Overview
+## Overview
 
 [http://bit.ly/slackmo](http://bit.ly/slackmo)
 
 This is a Venmo Slack integration leveraging Slack’s [slash command](https://api.slack.com/slash-commands). Within Slack you can easily pay your co-workers using a simple command. Currently, it supports the ability to pay using their Slack username. 
 
-###Slash Commands
+### Slash Commands
 
 Slash Commands are a great way to get started with Slack integrations. Anytime a user initiates a slash command (`/slackmo`), Slack merely POSTs the necessary data to your provided endpoint. A sample request can be seen here:
 
@@ -46,7 +46,7 @@ A first time user will be immediately prompted to Oauth with Venmo. A user must 
 The app has two endpoints: `/main` & `/venmoauth`, which can be seen in `api/views.py`. Slack POSTs all slash command data to the main endpoint and Venmo uses the venmoauth endpoint in the OAuth process.   
 
 
-###Housekeeping
+### Housekeeping
 
 1. Register a [custom slack command](https://my.slack.com/services/new/slash-commands).
 2. Register an App with Venmo [here](https://venmo.com/account/settings/developer). Make note of Client ID & Client Secret.
